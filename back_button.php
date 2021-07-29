@@ -1,0 +1,1 @@
+<<<<a class="submit_button" href="javascript:history.back(1)"><i class='fa fa-backward'></i> <?php echo $english_text9="Go Back";?></a>

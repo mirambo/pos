@@ -1,0 +1,26 @@
+<tr height="30" bgcolor="#C0D7E5">
+    <td width="10%" colspan="3">Less Sales Returns</td>
+    
+	<td width="2%"><div align="right">
+	
+	<?php 
+$sqlsalesret="SELECT credit_notes.ttl_sales_return FROM credit_notes";
+$resultssalesret= mysql_query($sqlsalesret) or die ("Error $sqlsalesret.".mysql_error());
+if (mysql_num_rows($resultssalesret) > 0)
+{
+while ($rowssalesret=mysql_fetch_object($resultssalesret))
+		{
+		 $ttl_salesret=$ttl_salesret+$rowssalesret->ttl_sales_return;
+		
+		}
+echo number_format($ttl_salesret,2);
+
+}
+	
+	?>
+	
+	
+	</td>
+    <td width="2%" colspan="2"></td>
+    
+</tr>

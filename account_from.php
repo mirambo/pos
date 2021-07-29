@@ -1,0 +1,1 @@
+<script>$("#account_from'+ counter +'").select2( {	placeholder: "Select Account From",	allowClear: true	} );</script>

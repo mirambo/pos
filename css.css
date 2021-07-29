@@ -1,0 +1,2399 @@
+body
+{
+background: url(images/bg.png) repeat-x;
+margin:auto;
+font-size:12px;
+font-family:arial;
+	
+
+}
+p
+{
+padding:5px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+
+}
+
+#wrapper
+{
+
+width:100%;
+min-height:360px;
+margin:auto;
+background: #ffffff url(images/oranbg.jpg) no-repeat;
+border-top:2px solid #013567;
+border-bottom:2px solid #013567;
+}
+
+#wrapper2
+{
+
+width:100%;
+min-height:400px;
+margin:auto;
+
+}
+
+/*#header
+{
+width:100%;
+height:58px;
+background:#2E3192 url(images/headerbg.jpg) no-repeat;
+margin:auto;
+border-bottom:2px solid #013567;
+
+}*/
+
+#wrapperhome
+{
+
+width:1200px;
+min-height:450px;
+margin:auto;
+}
+
+#oran
+{
+width:900px;
+height:450px;
+
+float:left;
+
+
+}
+#content
+{
+width:510px;
+height:290px;
+background:url(images/fd.jpg) no-repeat;
+float:right;
+margin-top:40px;
+margin-right:50px;
+}
+
+
+#contentleft
+{
+width:100%;
+min-height:400px;
+background:url(images/contleftbg.jpg) repeat-x;
+float:left;
+
+}
+#contentright
+{
+width:250px;
+min-height:400px;
+background:#CCCCCC;
+float:left;
+margin-left:2px;
+}
+#contentright a
+{
+color:#ff0000;
+font-size:13px;
+font-weight:bold;
+margin-top:10px;
+background:#cccccc;
+text-decoration:none;
+
+
+}
+
+#contentright a:hover
+{
+color:#003399;
+font-size:13px;
+font-weight:bold;
+margin-top:10px;
+
+text-decoration:underline;
+height:30px;
+
+
+}
+#contentright li
+{
+margin-left:0px;
+background:#cccccc;
+}
+
+.br-5 {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	}
+	
+	inputtt.backbutton,
+inputtt.editbutton,
+inputtt.savebutton,
+inputtt.applybutton,
+inputtt.approvebutton,
+inputtt.updatebutton,
+inputtt.clearbutton,
+inputtt.inserttimebutton,
+inputtt.cancelbutton,
+inputtt.resetbutton,
+inputtt.addbutton,
+inputtt.delbutton,
+inputtt.rejectbutton,
+inputtt.exportbutton,
+inputtt.assignbutton,
+inputtt.viewbutton,
+inputtt.detailsbutton,
+inputtt.submitbutton,
+inputtt.searchbutton,
+inputtt.punchbutton {
+
+}
+
+inputtt.plainbtn {
+	background: #622f68 none repeat scroll 0 0 !important;
+	border: none;
+	color: #ffffff;
+	font-weight: bold;
+        min-width: 70px;
+        min-height: 20px;
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: 3px 0;
+	margin-right: 3px;
+}
+
+inputtt.csvplainbtn {
+	background:#999966 none repeat scroll 0 0 !important;
+	border-color:#CCCC99 #666633 #666633 #CCCC99 !important;
+	border-style:solid !important;
+	border-width:1px !important;
+	color:#FFFFFF !important;
+	font-size: 12px;
+	font-weight:bold !important;
+	min-width:80px;
+	width: auto;
+	cursor: default;
+}
+
+inputtt.longbtn {
+	background: #622f68 none repeat scroll 0 0 !important;
+	border-color:#CCCC99 #666633 #666633 #CCCC99 !important;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-style:solid !important;
+	border-width:0px !important;
+	color:#FFFFFF !important;
+	font-size: 11px;
+	font-weight:bold !important;
+	min-width:120px;
+	width: auto;
+	cursor: default;
+}
+
+inputtt.extralongbtn {
+	background: #622f68 none repeat scroll 0 0 !important;
+	border-color:#CCCC99 #666633 #666633 #CCCC99 !important;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-style:solid !important;
+	border-width:0px !important;
+	color:#FFFFFF !important;
+	font-size: 12px;
+	font-weight:bold !important;
+	min-width:120px;
+	width: auto;
+	cursor: default;
+}
+
+inputtt.backbuttonhov,
+inputtt.editbuttonhov,
+inputtt.savebuttonhov,
+inputtt.applybuttonhov,
+inputtt.approvebuttonhov,
+inputtt.inserttimebuttonhov,
+inputtt.updatebuttonhov,
+inputtt.clearbuttonhov,
+inputtt.cancelbuttonhov,
+inputtt.resetbuttonhov,
+inputtt.addbuttonhov,
+inputtt.delbuttonhov,
+inputtt.rejectbuttonhov,
+inputtt.exportbuttonhov,
+inputtt.assignbuttonhov,
+inputtt.viewbuttonhov,
+inputtt.detailsbuttonhov,
+inputtt.submitbuttonhov,
+inputtt.searchbuttonhov,
+inputtt.punchbuttonhov,
+inputtt.plainbtnhov,
+inputtt.longbtnhov,
+inputtt.extralongbtnhov {
+
+}
+
+.inputttFormatHint {
+	color: #D8D8D8;
+}
+
+
+    :disabled:not([type="image"]) {
+        background-color:#FFFFFF;
+        color:#444444;
+    }
+
+    inputtt[type=text] {
+
+        border-top-width: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid #888888;
+    }
+
+    form inputtt.forminputttText{
+
+		border-top-width: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid #888888;
+	}
+
+
+
+#content h1
+{
+padding:6px; margin:0; border:0;
+background: url(images/h1bg.png);
+color:#000000;
+height:20px;
+width:300px;
+margin-left:5px;
+margin-right:5px;
+margin-top:5px;
+font: bold 15px Tahoma;
+
+}
+
+#content ul li
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+background-image:url(images/bullets.png);
+background-repeat:no-repeat;
+background-position:0px 5px; 
+padding-left:14px;
+padding-right:14px;
+list-style-type:none;
+margin-right:5px;
+
+
+}
+
+#footer
+{
+width:100%;
+height:50px;
+background:#2E3192;
+margin:auto;
+color:#ffffff;
+border-top:2px solid #ff0000;
+}
+#footer a
+{
+
+color:#ffffff;
+
+}
+
+#logo
+{
+width:796px;
+height:552px;
+margin:auto;
+float:left;
+}	
+
+#spacer
+{
+
+width:400px;
+height:250px;
+margin:auto;
+
+
+}
+
+#enter
+{
+
+width:300px;
+height:50px;
+margin:auto;
+color:#999999;
+font-family:verdana;
+font-size:13px;
+float:right;
+
+}
+
+
+
+.shadow
+{
+
+
+-moz-box-shadow: 3px 0px 40px 15px  #ffffff;
+ -webkit-box-shadow: 3px 3px 4px 10px #ffffff;
+ box-shadow: 3px 3px 4px 10px #ffffff;
+ 
+ -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+ /* For IE 5.5 - 7 */
+ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#cccccc');
+
+
+}
+
+#mainmenu
+{
+
+width:100%;
+height:36px;
+background: #013567;
+margin-right:auto;
+
+
+}
+
+
+	
+	.br-5 {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	}
+	
+	inputtt.backbutton,
+inputtt.editbutton,
+inputtt.savebutton,
+inputtt.applybutton,
+inputtt.approvebutton,
+inputtt.updatebutton,
+inputtt.clearbutton,
+inputtt.inserttimebutton,
+inputtt.cancelbutton,
+inputtt.resetbutton,
+inputtt.addbutton,
+inputtt.delbutton,
+inputtt.rejectbutton,
+inputtt.exportbutton,
+inputtt.assignbutton,
+inputtt.viewbutton,
+inputtt.detailsbutton,
+inputtt.submitbutton,
+inputtt.searchbutton,
+inputtt.punchbutton {
+	background: #622f68 none repeat scroll 0 0 !important;
+	border: none;
+	color: #ffffff;
+	font-weight: bold;
+        min-width: 70px;
+        min-height: 20px;
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: 3px 0;
+	margin-right: 3px;
+}
+
+inputtt.plainbtn {
+	background: #622f68 none repeat scroll 0 0 !important;
+	border: none;
+	color: #ffffff;
+	font-weight: bold;
+        min-width: 70px;
+        min-height: 20px;
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: 3px 0;
+	margin-right: 3px;
+}
+
+inputtt.csvplainbtn {
+	background:#999966 none repeat scroll 0 0 !important;
+	border-color:#CCCC99 #666633 #666633 #CCCC99 !important;
+	border-style:solid !important;
+	border-width:1px !important;
+	color:#FFFFFF !important;
+	font-size: 12px;
+	font-weight:bold !important;
+	min-width:80px;
+	width: auto;
+	cursor: default;
+}
+
+inputtt.longbtn {
+	background: #622f68 none repeat scroll 0 0 !important;
+	border-color:#CCCC99 #666633 #666633 #CCCC99 !important;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-style:solid !important;
+	border-width:0px !important;
+	color:#FFFFFF !important;
+	font-size: 12px;
+	font-weight:bold !important;
+	min-width:120px;
+	width: auto;
+	cursor: default;
+}
+
+inputtt.extralongbtn {
+	background: #622f68 none repeat scroll 0 0 !important;
+	border-color:#CCCC99 #666633 #666633 #CCCC99 !important;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-style:solid !important;
+	border-width:0px !important;
+	color:#FFFFFF !important;
+	font-size: 12px;
+	font-weight:bold !important;
+	min-width:120px;
+	width: auto;
+	cursor: default;
+}
+
+inputtt.backbuttonhov,
+inputtt.editbuttonhov,
+inputtt.savebuttonhov,
+inputtt.applybuttonhov,
+inputtt.approvebuttonhov,
+inputtt.inserttimebuttonhov,
+inputtt.updatebuttonhov,
+inputtt.clearbuttonhov,
+inputtt.cancelbuttonhov,
+inputtt.resetbuttonhov,
+inputtt.addbuttonhov,
+inputtt.delbuttonhov,
+inputtt.rejectbuttonhov,
+inputtt.exportbuttonhov,
+inputtt.assignbuttonhov,
+inputtt.viewbuttonhov,
+inputtt.detailsbuttonhov,
+inputtt.submitbuttonhov,
+inputtt.searchbuttonhov,
+inputtt.punchbuttonhov,
+inputtt.plainbtnhov,
+inputtt.longbtnhov,
+inputtt.extralongbtnhov {
+	border-color: #c63 #c63 #930 #930 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {padding:5px; color:#ffffff; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; background-color: #FF9900; margin-left:5px; margin-right:5px; height:20px; font-weight:bold;}
+.tagline {font-size: 60%; color: #ffffff;}
+
+#search {float: right; width: 280px; padding: 5px; text-align: right;}
+.button {border: outset; 2px #000000; background-color: #33CC66; color: #ffffff; font-weight: bold;}
+.text {border: solid 1px #000000; background-color: #eeeeee;}
+
+#bread {margin-top: 0px; margin-bottom: 10px; font-size:14px; padding: 5px; border-top: solid 1px #000000; border-bottom: solid 1px #000000; background-color: #33CC66; text-align: left; background:url(../images/menubg.jpg); font-weight:bold; height:100px;}
+
+#bread2 {margin-top: 0px; margin-bottom: 10px; font-size:14px; padding: 5px; border-bottom: solid 1px #039; text-align: left; font-weight:bold;}
+#bread a {margin-left: 2px; margin-right: 2px; color: #000000; text-decoration: none;}
+#bread a:hover {text-decoration: underline;}
+
+#left {float: left; width: 18%; border: solid 1px #cccccc; margin-bottom: 15px; background-color: #ffffff; border-top: 0;}
+
+#left a {display: block; width: 95.5%; margin: 0px; padding: 2px; border: solid 1px #ffffff; color: #0066cc; text-decoration: none;}
+#left a:hover {border: solid 1px #0066cc; background-color: #0066cc; color: #ffffff;}
+#left h3 {margin: 0; padding: 2px; font-weight: normal; background-color: #33CC66; border-top: solid 1px #000000; border-bottom: solid 1px #000000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+inputtt.backbutton,
+inputtt.editbutton,
+inputtt.savebutton,
+inputtt.applybutton,
+inputtt.approvebutton,
+inputtt.updatebutton,
+inputtt.clearbutton,
+inputtt.inserttimebutton,
+inputtt.cancelbutton,
+inputtt.resetbutton,
+inputtt.addbutton,
+inputtt.delbutton,
+inputtt.rejectbutton,
+inputtt.exportbutton,
+inputtt.assignbutton,
+inputtt.viewbutton,
+inputtt.detailsbutton,
+inputtt.submitbutton,
+inputtt.searchbutton,
+inputtt.punchbutton {
+}
+
+inputtt.plainbtn {
+	background: #622f68 none repeat scroll 0 0 !important;
+	border: none;
+	color: #ffffff;
+	font-weight: bold;
+        min-width: 70px;
+        min-height: 20px;
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: 3px 0;
+	margin-right: 3px;
+}
+
+inputtt.csvplainbtn {
+	background:#999966 none repeat scroll 0 0 !important;
+	border-color:#CCCC99 #666633 #666633 #CCCC99 !important;
+	border-style:solid !important;
+	border-width:1px !important;
+	color:#FFFFFF !important;
+	font-size: 12px;
+	font-weight:bold !important;
+	min-width:80px;
+	width: auto;
+	cursor: default;
+}
+
+inputtt.longbtn {
+	background: #622f68 none repeat scroll 0 0 !important;
+	border-color:#CCCC99 #666633 #666633 #CCCC99 !important;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-style:solid !important;
+	border-width:0px !important;
+	color:#FFFFFF !important;
+	font-size: 12px;
+	font-weight:bold !important;
+	min-width:120px;
+	width: auto;
+	cursor: default;
+}
+
+inputtt.extralongbtn {
+	background: #622f68 none repeat scroll 0 0 !important;
+	border-color:#CCCC99 #666633 #666633 #CCCC99 !important;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-style:solid !important;
+	border-width:0px !important;
+	color:#FFFFFF !important;
+	font-size: 12px;
+	font-weight:bold !important;
+	min-width:120px;
+	width: auto;
+	cursor: default;
+}
+
+inputtt.backbuttonhov,
+inputtt.editbuttonhov,
+inputtt.savebuttonhov,
+inputtt.applybuttonhov,
+inputtt.approvebuttonhov,
+inputtt.inserttimebuttonhov,
+inputtt.updatebuttonhov,
+inputtt.clearbuttonhov,
+inputtt.cancelbuttonhov,
+inputtt.resetbuttonhov,
+inputtt.addbuttonhov,
+inputtt.delbuttonhov,
+inputtt.rejectbuttonhov,
+inputtt.exportbuttonhov,
+inputtt.assignbuttonhov,
+inputtt.viewbuttonhov,
+inputtt.detailsbuttonhov,
+inputtt.submitbuttonhov,
+inputtt.searchbuttonhov,
+inputtt.punchbuttonhov,
+inputtt.plainbtnhov,
+inputtt.longbtnhov,
+inputtt.extralongbtnhov {
+
+}
+
+/* Back button */
+a.backbutton {
+	display:block;
+	width:65px;
+	height:20px;
+	cursor: default;
+	background: url(../images/btn_backdual.gif) no-repeat left top;
+}
+a.backbutton:hover {
+	background-position: 0 -20px;
+}
+a.backbutton span {
+	display:none;
+}
+
+
+
+
+/* message bar - eg: successfully updated */
+div.messagebar span {
+	font-size: 10px;
+	padding-left: 4px;
+}
+
+/* TODO: Take out the width */
+div.messagebar {
+    width: auto;
+    text-align: left;
+    margin: 0;
+    padding: 2px 0 2px 0px;
+    border-top: 0;
+    border-bottom:1px solid #FAD163;
+    background-color: white;
+}
+
+div.searchbox {
+    width: auto;
+    margin: 0;
+    padding: 6px 0 6px 0;
+    border-top: 0;
+    border-bottom:1px solid #622F68;
+    background-color: white;
+}
+
+div.searchbox label {
+	font-weight: bold;
+	color: black;
+	float: left;
+	padding-left: 0 0 0 4px;
+    margin: 0px 4px 0px 0px;
+    text-align: left;
+    width: auto;
+}
+
+div.searchbox inputtt,
+div.searchbox select {
+	margin-right: 30px;
+	float:left;
+}
+
+div.searchbox inputtt.plainbtn {
+	margin-right: 4px;
+}
+
+br.clear {
+	clear:both;
+}
+
+/* Data table styling start */
+
+table.data-table {
+	width: 100%;
+	border: none;
+	background-color:#FAD163;
+}
+
+table.data-table thead {
+	background-color: #CCCCCC;
+}
+
+table.data-table thead td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 12px;
+	color: #444444;
+	font-weight: bold;
+	text-align: left;
+}
+
+table.data-table thead td a.null {
+	background: url(../icons/null.png) no-repeat right center;
+	padding-right: 10px;
+}
+
+table.data-table thead td a.ASC {
+	background: url(../icons/ASC.png) no-repeat right center;
+	padding-right: 10px;
+}
+table.data-table thead td a.DESC {
+	background: url(../icons/DESC.png) no-repeat right center;
+	padding-right: 10px;
+}
+
+table.data-table tbody {
+	background-color:#ffffff;
+	height:auto;
+	/*overflow:auto;*/
+}
+table.data-table tbody tr {
+	height: 1em;
+	
+}
+table.data-table tbody tr td {
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+table.data-table tbody td a {
+	font-size: 12px;
+	color: #000000;
+	
+}
+
+table.data-table tbody td a:hover {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+table.data-table tr.odd td {
+	background-color: white;
+}
+
+table.data-table tr.even td {
+	background-color: #eeeeee;
+}
+
+/* Data table styling end */
+
+/* Start search page styling */
+.outerbox .formcontent {
+    background-color: #FFF;
+	border:0px solid #FAD163;
+	border-width:0 2px;
+
+	/* Height given to give hasLayout to avoid peekaboo bug in IE */
+	height: 100%;
+}
+
+div.actionbar {
+	background-color:white;
+	width:100%;
+	display:block;
+	float:left;
+}
+
+div.actionbuttons {
+	background-color:white;
+	padding: 2px;
+	width:35%;
+	float:left;
+}
+
+div.noresultsbar {
+	background-color:#FFF7D7;
+	padding-top: 4px;
+	width: auto;
+	float:left;
+}
+
+div.pagingbar {
+	background-color:inherit;
+	text-align: left;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-right:2px;
+	width: auto;
+	display:block;
+	float:right;
+}
+
+div.pagingbar span.inactive {
+	color:gray;
+	font-size:11px;
+}
+/* End search page styling */
+
+/* Results table in pim */
+div.pimpanel div.actionbar {
+	border-top: 1px solid #FAD163;
+	border-bottom: 1px solid #FAD163;
+}
+
+div.pimpanel div.actionbar div.actionbuttons {
+	padding: 3px 0 3px 3px;
+	width: 80%;
+}
+
+/* Start round border styles */
+.outerbox .top .left{
+	float:left;
+	width:8px;
+	height:2px;
+	background: #622F68 url(../images/topleft.gif) no-repeat top left;
+}
+
+.outerbox .top .right{
+	float:right;
+	width:8px;
+	height:2px;
+	background: #622F68 url(../images/topright.gif) no-repeat top right;
+}
+
+.outerbox .top .middle{
+	margin:0 8px;
+	background: #622F68;
+	height:2px;
+}
+.outerbox .bottom .left{
+	float:left;
+	width:8px;
+	height:2px;
+	background: #622F68 url(../images/bottomleft.gif) no-repeat bottom left;
+}
+
+.outerbox .bottom .right{
+	float:right;
+	width:8px;
+	height:2px;
+	background: #622F68 url(../images/bottomright.gif) no-repeat bottom right;
+}
+
+.outerbox .bottom .middle{
+	margin:0 8px;
+	background:#622F68;
+	height:2px;
+}
+.outerbox .maincontent {
+    background-color: white;
+	border:0px solid #622F68;
+	border-width:0 2px;
+
+	/* Height given to give hasLayout to avoid peekaboo bug in IE */
+	height: auto;
+	/*height: 100%;*/
+}
+
+.outerbox .top div, .outerbox .bottom div{
+	font-size:0;
+}
+.outerbox {
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 98%;
+}
+/* End round border styles */
+
+/* Start form page styling */
+
+/* Main div for page */
+div.formpageNarrow {
+    width: 350px;
+}
+div.formpage {
+	width: 500px;
+}
+div.formpage2col {
+	width: 600px;
+}
+
+div.formpage3col {
+    width: 700px;
+}
+
+/* div with back button */
+div.navigation {
+	margin-top:5px;
+	margin-left:15px;
+}
+
+/* Styling for required mark */
+span.required {
+	color: red;
+}
+
+/* Error in a single field, shown next to it */
+div.fielderror {
+	display:block;
+	float: left;
+	margin:10px;
+	color: red;
+}
+
+/* Required field notice */
+div.requirednotice {
+	margin-left:16px;
+}
+
+div.fieldHint {
+	display:block;
+	float:left;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+label.sideHint {
+	font-size:10px;
+	width:120px;
+	color:#999999;
+	font-style:italic;
+}
+
+/* Form elements */
+label, select.formSelect, inputtt.forminputttText,textarea.formTextArea, inputtt.formDateinputtt,
+inputtt.fileselect, span.formValue, span.formLabel, span.wideFormLabel, span.wideFormValue,
+div.wideFormValue, select.formTimeSelect, inputtt.formFileinputtt {
+    display: block;
+    float: left;
+    margin: 10px 0px 2px 0px;
+}
+
+inputtt.formRadio, inputtt.formCheckbox {
+	display: block;
+	float: left;
+	margin: 10px 0 2px 0;
+}
+
+inputtt.formCheckboxWide {
+    display: block;
+    float: left;
+    margin: 10px 100px 0 0;
+}
+inputtt.alignCheckbox {
+	display: block;
+	float: left;
+	margin: 10px 0 2px 7px;
+}
+
+span.formFieldContainer {
+	display:block;
+	float:left;
+	width:150px;
+	margin-left: 10px;
+}
+
+label, span.formLabel, span.wideFormLabel {
+    text-align: left;
+    width: 110px;
+    padding-left: 10px;
+}
+label.optionlabel {
+	width: auto;
+	margin-right:2px;
+}
+
+select.formSelect, inputtt.forminputttText,textarea.formTextArea, span.formValue, span.wideFormValue, div.wideFormValue {
+    margin-left: 10px;
+    width: 150px;
+}
+
+inputtt.formFileinputtt {
+    margin-left: 10px;
+}
+
+select.formSelect {
+    width: 160px;
+}
+
+select.formTimeSelect {
+    margin-left: 10px;
+    width: 5em;
+}
+
+inputtt.forminputttText, textarea.formTextArea, span.formValue {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+textarea.formTextArea {
+    width: 250px;
+}
+
+inputtt.longField {
+	width: 300px;
+}
+
+inputtt.empPopupButton, inputtt[type=button].empPopupButton {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+select.countrySelect {
+	width:auto;
+}
+
+span.wideFormLabel {
+    width:200px;
+}
+span.wideFormValue, div.wideFormValue {
+    width:250px;
+}
+
+/* Date inputtt*/
+inputtt.formDateinputtt {
+	margin-left: 10px;
+	padding-left: 4px;
+	padding-right: 4px;
+	width: 120px;
+}
+inputtt.calendarBtn, inputtt[type=button].calendarBtn {
+	display: block;
+	float: left;
+	border: 0;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 16px;
+	height: 16px;
+	background-image: url(../icons/calendar.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Div with buttons (save, edit, cancel) in form */
+div.formbuttons {
+	text-align: center;
+	width:auto;
+	height:auto;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:15px;
+	display:block;
+	padding-top: 10px;;
+	padding-bottom: 10px;
+	float:none;
+	border-top: 1px solid #622f68;
+}
+
+div.loading {
+	display: none;
+    text-align:right;
+    background-position: right;
+    background-image: url(../icons/loading.gif);
+    background-repeat: no-repeat;
+}
+div.loading span {
+    vertical-align:text-top;
+}
+
+/* End form page styling */
+
+/* PIM specific styling */
+#toggleContractLayerLink {
+	margin-left:50px;
+	background-position: left;
+	background-image: url(../icons/contract_show.png);
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	outline: none;
+}
+
+#toggleContractLayerLink.show {
+	background-image: url(../icons/contract_show.png);
+}
+
+#toggleContractLayerLink.hide {
+	background-image: url(../icons/contract_hide.png);
+}
+
+#toggleJobHistoryLayerLink {
+	margin-left:10px;
+	background-position: left;
+	background-image: url(../icons/contract_show.png);
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	outline: none;
+}
+
+#toggleJobHistoryLayerLink.show {
+	background-image: url(../icons/contract_show.png);
+}
+
+#toggleJobHistoryLayerLink.hide {
+	background-image: url(../icons/contract_hide.png);
+}
+
+
+/* Sub lists in PIM */
+
+td.tabForm {
+	padding: 0;
+	border-top: 1px solid #FAD163;
+	border-right: 1px solid #FAD163;
+	border-bottom: 1px solid #FAD163;
+	border-left: 1px solid #FAD163;
+}
+
+td.leftList {
+	padding: 0;
+	border-right: 1px solid #FAD163;
+}
+td.rightList {
+	padding: 0;
+	border: 0;
+}
+/* End PIM specific styling */
+
+/* Start generic styling */
+.hide {
+    display:none;
+}
+
+.show {
+    display: block;
+}
+
+tr.show {
+    display: table-row;
+}
+
+/*------------------------------------------------------------------ End confirmed styles -----------------------------------------------------*/
+
+/* Default Styles */
+
+thead th{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+
+
+
+
+table,td {
+	color: #000000;
+	font-size: 12px;
+	}
+
+p {
+	MARGIN-TOP: 0px;
+	MARGIN-BOTTOM: 10px;
+	}
+
+form {
+	margin: 0px;
+	}
+
+
+
+
+h2 {
+	color: #000033;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	}
+
+
+
+h4 {
+	color: #333333;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 2px;
+	border-bottom: 2px solid #009;
+	background: #ED1C24;
+	margin-top:0px;
+
+	}
+
+h5 {
+	color: #0033CC;
+	height:20px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid #009;
+	margin:0px;
+	
+	}
+
+LI {
+	LIST-STYLE-TYPE: none;
+	margin-left: 6px;
+	MARGIN-BOTTOM: 2px;
+	}
+
+UL {
+	MARGIN-TOP: 2px;
+	}
+
+hr {
+	height: 1px;
+}
+a:link, a:visited {
+	color: #444444;
+	font-size: 11px;
+/*	text-decoration: underline; */
+	}
+a:hover {
+/*	color: #666666;
+	text-decoration: underline; */
+	}
+/* Form Styles */
+
+.button {
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	background-image: url(../images/btn_bg.gif);
+	}
+
+.buttonOn {
+	border: 1px solid #444444;
+	background-color: #ffffff;
+	font-size: 11px;
+	color: #444444;
+	font-weight: normal;
+	}
+
+/* Select padding-left set to 0 to match inputtt boxes, since select boxes seem to have padding anyway */
+select {
+	border: 1px solid #888888;
+	font-size: 12px;
+	background-color: #ffffff;
+	padding-left: 0px;
+	}
+inputtt:not([type=image]) {
+
+	}
+
+textarea {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	border: 1px solid #888888;
+	font-size: 12px;
+	background-color: #ffffff;
+	padding-left: 4px;
+	padding-right: 4px;
+	}
+.checkbox,.radio {
+	border:0px;
+	background-color: transparent;
+	margin: 0px;
+	vertical-align: bottom;
+	}
+
+
+/* Content Specific Styles */
+	/* body text */
+	.contentBox {
+		background-color: #efefef;
+		border: 1px #9e9e9e solid;
+		padding: 5px;
+	}
+	.teamNoticeBox {
+		background-color: #eeeeee;
+		border: 1px #980000 solid;
+		padding-left: 5px;
+		padding-right: 5px;
+		color: #00568C;
+	}
+	a.body:link, a.body:visited {
+		color: #444444;
+		font-size: 12px;
+/*		text-decoration: underline;*/
+		}
+
+	a.body:hover {
+/*		color: #666666;
+		text-decoration: underline; */
+		}
+
+	/*for the main screen navigation tabs*/
+	.currentTab {
+		color: #333333;
+		font-size: 12px;
+		font-weight: bold;
+		padding-top: 1px;
+		background : url(../images/nCurrentTab_middle.gif);
+		}
+	a.currentTab:link, a.currentTab:visited {
+		color: #333333;
+		text-decoration: none;
+		}
+	a.currentTab:hover {
+		color: #666666;
+		text-decoration: none;
+		}
+	.currentTabLeft {
+		background : url(../images/nCurrentTab_left.gif);
+		}
+	.currentTabRight {
+		background : url(../images/nCurrentTab_right.gif);
+		}
+	.tabSpace {
+		background : url(../images/emptyTabSpace.gif);
+		}
+
+	.otherTab {
+		font-size: 12px;
+		font-weight: bold;
+		}
+	td.otherTab {
+		background-image : url(../images/otherTab_middle.png);
+		}
+	a.otherTab:link, a.otherTab:visited {
+		color: #6e6e6e;
+		text-decoration: none;
+		}
+	a.otherTab:hover {
+		color: #3C3C3C;
+		text-decoration: none;
+		}
+	.otherTabLeft {
+		background : url(../images/otherTab_left.png);
+		}
+	.otherTabRight {
+		background : url(../images/otherTab_right.png);
+		}
+	.tabSeparator {
+		padding-left:7px;
+		background-image :url(../images/nCurrentTab_left.gif);
+	}
+	.tabRow {
+		background-color: white;
+	}
+	.tabContainer {
+		width: 100%;
+		background-color: #E5E5E5;
+/*		border-width: 0px;
+		border-collapse: collapse;
+		border-spacing: 0px;
+		margin: 0px;
+		padding: 0px;*/
+	}
+	.tabLeftSpace {
+	}
+	#companyLogoHeader{
+		
+		width:100%;
+		height: 90px;
+		background: url(../images/headerfadeimg.jpg) no-repeat;
+		
+		border-width: 0px;
+		float:left;
+		display:block;
+		
+		/*background: -moz-linear-gradient(left, #FFFFFF, #622f68);
+		filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#FFFFFF', EndColorStr='#622f68', GradientType=1);*/
+
+		
+	}
+	
+	
+	#rightHeaderImage {
+		background:url(../images/info.png) no-repeat;
+		width: 800px;
+		height: 29px;
+		float:right;
+		display:block;
+		
+	}
+	.companyLogoHeader {
+		
+		width:900px;
+		height: 62px;
+		margin-left: 0px;
+		border-width: 0px;
+		
+
+		
+		}
+		
+		
+#ownlogoImage{
+width:300px;
+height:62px;
+background:#33FFCC;
+background : url(../images/logo.png) no-repeat;
+float:left;
+margin-top:3px;
+margin-left:5px;
+
+
+}		
+	.headerRight {
+		background : url(../images/top_img.jpg) no-repeat top right;
+		width: 300px;
+		height: 62px;
+		}
+
+	.subMenuTDIcon {
+		font-size: 12px;
+		color: #ffffff;
+		background-color: #efefef;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		padding-left: 3px;
+		padding-right: 3px;
+		border-right: 1px solid #fefefe;
+		}
+	.subMenuTD {
+		font-size: 12px;
+		color: #ffffff;
+		background-color: #DFDFDF;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		border-bottom: 1px solid #EDEDED;
+		}
+	a.subMenuLink:link, a.subMenuLink:visited {
+		color: #444444;
+		text-decoration: none;
+		border-bottom: 0px;
+		padding-left: 0px;
+		}
+	a.subMenuLink:hover {
+		color: #666666;
+		text-decoration: none;
+		border-bottom: 0px;
+		}
+	.bugtrackerLeftCol {
+		height: 800;
+		width: 158;
+		background-color: #FFB121;
+	}
+
+	/*welcome user and date bar and last view*/
+	.moduleTitle {
+	border-bottom: 1px solid #aaaaaa;
+	color: black;
+	}
+	.welcome {
+		font-size: 12px;
+		font-weight: bold;
+		color: #333333;
+		background-color: #FF9900;
+		border-bottom: 1px solid #000000;
+		padding-left: 10px;
+		}
+	.searchField {
+		border: 1px solid #323232;
+		font-size: 11px;
+		background-color: #ffffff;
+	}
+
+        td.search a {
+               color: #444444;
+        }
+	.search {
+		color: #ffffff;
+		background-color: #FF9900;
+		border-bottom: 1px solid #000000;
+		padding-right: 10px;
+		text-align: right;
+		}
+	.searchSeparator {
+		border-bottom: 1px solid #000000;
+		background-color: #FF9900;
+		background-image: url(../images/nSearchSeparator.gif);
+		padding-right: 10px;
+		width: 12px;
+		height: 20px;
+		}
+	.searchButton {
+		background-color: transparent;
+		border: 0px;
+		padding-right: 10px;
+		}
+
+	.lastView {
+		color: #666666;
+		background-color: #dddddd;
+		padding-left: 10px;
+		border-bottom: 1px solid #cccccc;
+		}
+
+	a.lastViewLink:link, a.lastViewLink:visited {
+		color: #444444;
+/*		text-decoration: underline;*/
+		border-bottom: 0px;
+		padding-left: 0px;
+		}
+	a.lastViewLink:hover {
+/*		color: #666666;*/
+		text-decoration: none;
+		border-bottom: 0px;
+		}
+
+	/*left column styles*/
+	table.leftColumnModuleHead th {
+		font-size: 12px;
+		color: #444444;
+		text-align: left;
+		padding: 0px;
+	}
+
+
+	/*right main content (suffix S1 stands for Style 1) */
+	.listView {
+		border: 1px solid #9E9E9E;
+	}
+	.listViewThS1 {
+		font-size: 12px;
+		color: #666666;
+		font-weight: bold;
+		text-align: left;
+/*		background-image: url(../images/listViewBg.png); */
+		padding-left: 5px;
+		padding-right: 5px;
+		border-bottom: 1px solid #cccccc;
+
+	}
+	a.listViewThLinkS1:link, a.listViewThLinkS1:visited {
+		color: #444444;
+		font-weight: bold;
+		text-decoration: none;
+		}
+	a.listViewThLinkS1:hover {
+	color: #222222;
+	text-decoration: none;
+		}
+	a.listViewTdLinkS1:link, a.listViewTdLinkS1:visited {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+
+		}
+	a.listViewTdLinkS1:hover {
+/*	text-decoration: underline; */
+		}
+	.evenListRowS1 {
+		font-size: 12px;
+		color: #000000;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 4px;
+		padding-top: 2px;
+	}
+
+	.oddListRowS1 {
+		font-size: 12px;
+		color: #000000;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 4px;
+		padding-top: 2px;
+	}
+
+	.listViewHRS1 {
+		background-color: #cccccc;
+	}
+	.pageNumbers {
+		color: #444444;
+	}
+	.listViewPaginationTdS1 {
+		font-size: 10px;
+		color: #999999;
+		background-color: #eeeeee;
+		padding-right: 5px;
+		padding-left: 5px;
+		border-top: 1px solid #ffffff;
+		border-bottom: 1px solid #9E9E9E;
+	}
+	a.listViewPaginationLinkS1:link, a.listViewPaginationLinkS1:visited {
+		color: #E90000;
+		font-size: 10px;
+		font-weight: normal;
+		text-decoration: none;
+		}
+	a.listViewPaginationLinkS1:hover {
+		color: #ff0000;
+		font-size: 10px;
+		text-decoration: none;
+		}
+	a.utilsLink:link, a.utilsLink:visited {
+		color: #B20000;
+		font-size: 11px;
+		font-weight: normal;
+		text-decoration: none;
+
+		}
+	a.utilsLink:hover {
+		color: #FF0000;
+		font-size: 11px;
+		text-decoration: none;
+		}
+
+	h4.dataLabel {
+/*		color: #666666;  */
+		font-size: 14px;
+		font-weight: bold;
+		margin-bottom: 2px;
+	}
+
+	h5.dataLabel {
+		color: #888888;
+		font-size: 13px;
+		font-weight: bold;
+		margin-bottom: 1px;
+		margin-top: 1px;
+	}
+	.dataLabel {
+		font-weight: bold;
+		vertical-align : top;
+	}
+	.dataField {
+		font-weight: normal;
+		vertical-align : top;
+	}
+
+
+	/* main tab panel views */
+	.tabDetailView {
+		border: 1px solid #444444;
+		background-color: #cccccc;
+	}
+
+	.tabDetailViewDF {
+	font-size: 12px;
+		color: #000000;
+		background-color: #fafafa;
+		font-weight: bold;
+		padding-right: 4px;
+		padding-left: 4px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		vertical-align: top;
+		font-weight: bold;
+	}
+
+	/* misc font displays */
+	.required {
+		color: #ff0000;
+	}
+	.failure {
+		color: #ff0000;
+	}
+	.warning {
+		color: #E0B662;
+	}
+	.success {
+		color: #005500;
+	}
+	.notice {
+		#000000;
+	}
+	.dateFormat {
+		font-weight: normal;
+		font-style: italic;
+		font-size: 10px;
+	}
+
+	.tm {
+		font-size: 8px;
+		font-family: Verdana;
+	}
+
+/* menu styles */
+a.rollmenu:link, a.rollmenu:visited {
+	color: #444444;
+	font-size: 11px;
+}
+.rollmenu
+{
+	padding-right: 2px;
+	display: block;
+	padding-left: 2px;
+	font-size: 12px;
+	padding-bottom: 2px;
+	color: #000000;
+	line-height: normal;
+	padding-top: 2px;
+	border-top: #FFCE73 1px solid;
+	border-left: #FFCE73 1px solid;
+	border-right: #D8B114 1px solid;
+	border-bottom: #D8B114 1px solid;
+	font-family: "Arial", "Helvetica", "sans-serif";
+	background-color: #FFCC00;
+	text-decoration: none
+}
+.rollmenu:hover
+{
+	background-color: #EDC112;
+	border-top: #FFCE73 1px solid;
+	border-left: #FFCE73 1px solid;
+	border-right: #D8B114 1px solid;
+	border-bottom: #D8B114 1px solid;
+	text-decoration: none
+}
+#menuhead
+{
+	background-color: #EDC112;
+	font-weight:bold;
+	padding-right: 2px;
+	display: block;
+	padding-left: 2px;
+	font-size: 11px;
+	padding-bottom: 2px;
+	border-top: #FFCE73 1px solid;
+	border-left: #FFCE73 1px solid;
+	border-right: #D8B114 1px solid;
+	border-bottom: #D8B114 1px solid;
+	color: #000000;
+	line-height: normal;
+	padding-top: 2px;
+	font-family: "Arial", "Helvetica", "sans-serif";
+	text-decoration: none
+}
+#menu1
+{
+	left: 1px;
+	visibility: hidden;
+	position: absolute;
+	top: 1px;
+	background-color: transparent
+}
+#menu2
+{
+	left: 1px;
+	visibility: hidden;
+	position: absolute;
+	top: 1px;
+	background-color: transparent
+}
+#menu3
+{
+	left: 1px;
+	visibility: hidden;
+	position: absolute;
+	top: 1px;
+	background-color: transparent
+}
+#menu4
+{
+	left: 1px;
+	visibility: hidden;
+	position: absolute;
+	top: 1px;
+	background-color: transparent
+}
+/* menu styles */
+.searchHeadings {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.ERR {
+    color: #FF0000;
+    background-color: #FFDDDD;
+}
+
+.odd {
+    background-color: #fffbed;
+}
+
+.even {
+    background-color: #FFF7D7;
+}
+
+.r2_c1 {
+    background: url('../images/table_r2_c1.gif') repeat-y right;
+}
+
+.r1_c1 {
+    background: url('../images/table_r1_c1.gif') no-repeat right top;
+}
+
+.r1_c3 {
+    background: url('../images/table_r1_c3.gif') no-repeat left top;
+}
+
+.r1_c2 {
+    background: url('../images/table_r1_c2.gif') repeat-x left top;
+}
+
+.r3_c1 {
+    background: url('../images/table_r3_c1.gif') no-repeat right bottom;
+}
+
+.r3_c3 {
+    background: url('../images/table_r3_c3.gif') no-repeat left bottom;
+}
+
+.r3_c2 {
+    background: url('../images/table_r3_c2.gif') repeat-x left bottom;
+}
+
+.r2_c3 {
+    background: url('../images/table_r2_c3.gif') repeat-y left;
+}
+
+.cmb {
+	width: 130px;
+}
+
+#notice {
+	padding-left: 10px;
+}
+
+.button1 {
+	border:none;
+}
+
+textarea {
+	border: 1px solid #888888;
+	font-size: 12px;
+	background-color: #ffffff;
+}
+
+.tableTopLeft {
+	background:url(../images/table_r1_c1.gif) no-repeat top right;
+	background:#000066;
+	width:12px;
+	height:11px;
+}
+
+.tableTopMiddle {
+	background:url(../images/table_r1_c2.gif) repeat-x top;
+}
+
+.tableTopRight {
+	background:url(../images/table_r1_c3.gif) no-repeat top left;
+	width:12px;
+	height:11px;
+}
+
+/* Styles needed for rounded box (css) */
+.north {
+    background: url(../images/table_r1_c2.gif) repeat-x top;
+}
+.east {
+    background: url(../images/table_r2_c3.gif) repeat-y right;
+}
+.south {
+    background: url(../images/table_r3_c2.gif) repeat-x bottom;
+}
+.west {
+    background: url(../images/table_r2_c1.gif) repeat-y left;
+}
+.ne {
+    background: url(../images/table_r1_c3.gif) no-repeat top right;
+}
+.se {
+    background: url(../images/table_r3_c3.gif) no-repeat bottom right;
+}
+.sw {
+    background: url(../images/table_r3_c1.gif) no-repeat bottom left;
+}
+.nw {
+    background: url(../images/table_r1_c1.gif) no-repeat top left;
+}
+.roundbox_content {
+    padding:15px;
+}
+
+*:not([type=image]):disabled {
+	background-color: #F6F4F1;
+	color: #666562;
+}
+
+inputtt:not([readonly]):not([type=image]):focus, select:focus, textarea:focus {
+
+}
+
+*[readonly] {
+	color: #000000;
+}
+
+table.simpleList {
+        border-width: 1px;
+        border-collapse: collapse;
+        border-style: solid;
+        border-color: gray;
+        margin:5px 0 0 5px;
+}
+table.simpleList th {
+        border-width: 0px 0px 1px 0px;
+        padding: 3px 3px 3px 5px;
+        border-style: solid;
+        border-color: gray;
+        color: black;
+        font-weight: bold;
+}
+table.simpleList td {
+        border-width: 0px;
+        padding: 3px 3px 3px 5px;
+}
+
+.inputttFormatHint {
+	color: #D8D8D8;
+}
+
+
+    :disabled:not([type="image"]) {
+        background-color:#FFFFFF;
+        color:#444444;
+    }
+
+    inputtt[type=text] {
+
+        border-top-width: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid #888888;
+    }
+
+    form inputtt.forminputttText{
+
+		border-top-width: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid #888888;
+	}
+
+    table.historyTable th {
+        border-width: 0px;
+        padding: 3px 3px 3px 5px;
+        text-align: left;
+    }
+    table.historyTable td {
+        border-width: 0px;
+        padding: 3px 3px 3px 5px;
+        text-align: left;
+    }
+
+    #active {
+        width: 15px;
+        height: 15px;
+        background-color: transparent;
+        vertical-align: bottom;
+    }
+
+    #txtDesc {
+        width: 330px;
+        height: 150px;
+    }
+
+	#nohiringmanagers {
+		font-style: italic;
+		color: red;
+        padding-left: 10px;
+        width: 400px;
+        border: 1px;
+	}
+
+	#employeeSearchAC {
+ 	    width:15em; /* set width here */
+ 	    padding-bottom:2em;
+        margin: 10px 0px 2px 10px;
+ 	}
+
+    #employeeSearchAC li {
+        list-style-type:none;
+    }
+
+ 	#employeeSearchAC {
+ 	    z-index:9000; /* z-index needed on top instance for ie & sf absolute inside relative issue */
+ 	}
+
+ 	#txtEmployeeSearch {
+ 	    _position:absolute; /* abs pos needed for ie quirks */
+ 	}
+
+ 	#frmGenerateAttendanceReport div.searchbox inputtt {
+ 	  margin-right:2px;
+ 	}
+
+    #frmGenerateAttendanceReport div.searchbox inputtt.calendarBtn {
+      margin-top:0px;
+    }
+
+    #frmGenerateAttendanceReport #employeeSearchAC {
+      margin-top:0;
+    }
+
+    #frmGenerateAttendanceReport #employeeSearchAC inputtt#txtEmployeeSearch {
+      float:none;
+    }
+
+   form inputtt.loginText {
+      border-top-width: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border-bottom: 1px solid #888888;
+      width:6em;
+      vertical-align:middle;
+      height:14px;
+    }
+
+    span.timeFormatHint {
+      font-size:10px;
+      color:#999999;
+      padding-left:6px;
+    }
+	
+	.br-5 {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	}
+	
+#login .left {
+    
+	width: 300px;;
+	float: left;
+	height: 230px;
+	margin-left:20px;
+	margin-top:10px;
+	padding-bottom:20px;
+	
+	border:#690 1px solid;
+	background:#CCCCCC url(../images/modules.png) no-repeat;
+	
+	/*background: -moz-linear-gradient(top,  #622f68,#FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#622f68', EndColorStr='#FFFFFF', GradientType=1);*/
+
+	
+}
+
+#login .leftimg {
+    background: #CCCCCC;
+	width: 400px;;
+	float: left;
+	height: 230px;
+	margin-left:15px;
+	margin-top:10px;
+	padding: 10px;
+	border:#690 1px solid;
+	 background: url(../images/hr.jpg) no-repeat;
+	
+	/*background: -moz-linear-gradient(top,  #622f68,#FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#622f68', EndColorStr='#FFFFFF', GradientType=1);*/
+
+	
+}
+
+#login .leftin {
+    
+	color: #FFFFFF;
+	width: 300px;;
+	float: right;
+	height: 230px;
+	margin-left:5px;
+	margin-right:10px;
+	margin-bottom:5px;
+	padding: 10px;
+	border:#690 1px solid;
+	margin-top:10px;
+	 background: url(../images/loginbg.jpg) repeat-x;
+	/* For WebKit (Safari, Google Chrome etc) */
+		/*background: -webkit-gradient(linear, left top, left bottom, from(#00f), to(#fff));*/
+		/* For Mozilla/Gecko (Firefox etc) */
+		/*background: -moz-linear-gradient(top, #00f, #fff);*/
+		/* For Internet Explorer 5.5 - 7 */
+		/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF0000FF, endColorstr=#FFFFFFFF);*/
+		/* For Internet Explorer 8 */
+		/*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF0000FF, endColorstr=#FFFFFFFF)";*/
+
+	
+	
+	/*background: -moz-linear-gradient(top,#622f68,#FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#622f68', EndColorStr='#FFFFFF', GradientType=1);*/
+				
+
+	
+}
+
+
+.shadow
+{
+
+
+-moz-box-shadow: 3px 3px 4px #000;
+ -webkit-box-shadow: 3px 3px 4px #000;
+ box-shadow: 3px 3px 4px #000;
+ 
+ -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+ /* For IE 5.5 - 7 */
+ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#cccccc');
+
+
+}
+
+#login .right {
+	width: 1110px;
+	float: right;
+	min-height: 300px;
+	border: #690 1px solid;
+     margin-left: 10px;
+	 margin-right:90px;
+	 background:url(../images/right.png) no-repeat;
+	 margin-top:10px;
+}
+
+footer{
+width:100%;
+height:300px;
+background:#2E3192;
+padding-top:10px;
+
+
+}
+table.background { background: url(../images/footer.jpg) no-repeat; }
+
+
+	 #contwrap
+	 {
+	 height:200px;
+	 float:left;
+	 width:100%;
+	 
+	 }
+
+	#leftMenu{
+		width:200px;
+		padding-left:10px;
+		padding-right:10px;
+		float:left;
+		height:700px;
+	
+	}
+	
+	
+	#rightcont
+	{
+	
+	width:82%; 
+	min-height:250px;  
+	float:right;
+	border:#cccccc solid 1px;
+	padding-left:5px;
+	padding-right:5px;
+	background:#016AAB;
+	/*background:url(../images/contbg.jpg) no-repeat;*/
+	
+	
+	
+	}
+	#rightcontcus
+	{
+	
+	width:100%; 
+	min-height:250px;  
+	float:right;
+	border:#cccccc solid 1px;
+	padding-left:5px;
+	padding-right:5px;
+	background:#016AAB;
+	/*background:url(../images/contbg.jpg) no-repeat;*/
+	
+	
+	
+	}
+	#rightcontf
+	{
+	
+	width:82%; 
+	min-height:250px;  
+	float:right;
+	border:#cccccc solid 1px;
+	padding-left:5px;
+	padding-right:5px;
+	background:url(../images/contbg.jpg) no-repeat;
+	
+	
+	
+	}
+	
+	#reportcont
+	{
+	
+	width:100%; 
+	min-height:324px;  
+	float:right;
+	border:#cccccc solid 1px;
+	padding-left:5px;
+	padding-right:5px;
+	margin-left:10px;
+	background:url(../images/reportbg.jpg) no-repeat;
+	
+	}
+	
+	
+	
+	/*
+	General rules
+	*/
+	/* 	Layout CSS */
+	#dhtmlgoodies_slidedown_menu{
+
+		visibility:hidden;
+		border:1px solid #000;
+		padding:1px;
+
+		width: 195px;	/* IE 5.x */
+		width/* */:/**/195px;	/* Other browsers */
+		width: /**/195px;
+
+	}
+
+	/* All A tags - i.e menu items. */
+	#dhtmlgoodies_slidedown_menu a{
+		color: #000;
+		text-decoration:none;
+		display:block;
+		clear:both;
+
+		padding-left:2px;
+
+		width: 182px;	/* IE 5.x */
+		width/* */:/**/170px;	/* Other browsers */
+		width: /**/170px;
+
+	}
+
+	img{
+		border:0px;
+	}
+	
+#contholder
+{
+
+
+min-height:400px;
+margin-top:5px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+#cont-left {
+		width: 80%;
+		min-height:300px;
+		float: left;
+		
+		background: #CCCCCC;
+		border:solid 1px #000033;
+		}
+		
+		#cont-left-full {
+		width: 100%;
+		min-height:300px;
+		float: left;
+		background: #CCCCCC;
+		border:solid 1px #000033;
+		}
+		
+		
+		#cont-right {
+		width: 17%;
+		min-height:300px;
+		float: right;
+		padding-right:15px;
+		background: #CCCCCC;
+		margin:auto;
+		border:solid 1px #000033;
+		}
+		
+		#submenu
+		{
+		padding-top:10px;
+		width:100%;
+		height:25px;
+		background:url(images/menubg1.jpg);
+		border-bottom: solid 2px #ff0000;
+		
+		}
+#submenu a
+{
+color:#ff0000;
+font-size:13px;
+margin-top:10px;
+text-decoration:none;
+margin-left:5px;
+margin-right:5px;
+
+
+}
+
+#submenu a:hover
+{
+color:#003399;
+font-size:13px;
+
+margin-top:10px;
+text-decoration:underline;
+height:30px;
+}
+
+		.submit_button2
+		{
+width:200px; height:30px; 
+border-radius:5px; 
+font-size:15px; 
+font-weight:bold; 
+color:#000; 
+background:#2E3192;
+		
+			
+		}
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

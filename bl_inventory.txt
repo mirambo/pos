@@ -1,0 +1,105 @@
+<tr height="30" bgcolor="#C0D7E5">
+    <td width="10%" colspan="3">Stock Or Inventory</td>
+    
+	<td width="2%"><div align="right">
+	
+	<?php 
+  
+$sql="select products.curr_bp,products.product_id,products.product_name,products.prod_code,products.reorder_level,SUM(received_stock.quantity_rec) as ttl_quant,
+products.pack_size,products.weight,received_stock.purchase_order_id,received_stock.order_code from products, received_stock 
+where products.product_id=received_stock.product_id group by received_stock.product_id ORDER BY products.product_name asc";
+$results= mysql_query($sql) or die ("Error $sql.".mysql_error());
+
+
+if (mysql_num_rows($results) > 0)
+						  {
+							  $RowCounter=0;
+							  while ($rows=mysql_fetch_object($results))
+							  { 
+							  
+							  $RowCounter++;
+							  if($RowCounter % 2==0)
+
+ 
+ ?>
+ 
+	
+	<?php //number_format($rows->ttl_quant,0);
+	$rec_prod=$rows->ttl_quant;
+    $prod_id=$rows->product_id;
+	
+	$sqlsold="select SUM(sales.quantity) as ttl_sold_prod from sales where sales.product_id='$prod_id'";
+	$resultssold= mysql_query($sqlsold) or die ("Error $sqlsold.".mysql_error());
+	$rowsold=mysql_fetch_object($resultssold);
+	
+	$sold_prod=$rowsold->ttl_sold_prod;
+	
+	
+$sqlprodcashsold="select SUM(cash_sales.quantity) as ttl_cash_sold_prod from cash_sales where cash_sales.product_id='$prod_id' group by cash_sales.product_id";
+$resultsprodcashsold= mysql_query($sqlprodcashsold) or die ("Error $sqlprodcashsold.".mysql_error());
+$rowprodcashsold=mysql_fetch_object($resultsprodcashsold);
+
+$prod_cash_sold=$rowprodcashsold->ttl_cash_sold_prod;
+
+$ttl_sold_prod=$sold_prod+$prod_cash_sold;
+	
+
+	
+	//echo $avail_prod; 
+	
+	
+	
+	
+	?>
+	
+	<?php  number_format($all_sold_prod=$sold_prod+$prod_cash_sold,0);?>
+	<?php  $avail_prod=$rec_prod-$all_sold_prod;//echo $rows->curr_bp;?>
+	<?php //echo $avail_prod;?><?php
+	
+	$purchase_order_id=$rows->purchase_order_id;
+	$order_code=$rows->order_code;
+	
+	$sqlxx="select purchase_order.product_id,suppliers.supplier_name,purchase_order.currency_code,purchase_order.curr_rate,purchase_order.purchase_order_id,purchase_order.quantity,purchase_order.vendor_prc,products.curr_bp,products.product_id,products.product_name,
+products.prod_code,products.reorder_level,received_stock.quantity_rec,received_stock.supplier_id,products.pack_size,products.weight,received_stock.delivery_date,received_stock.expiry_date from purchase_order,products,suppliers, received_stock 
+where purchase_order.supplier_id=suppliers.supplier_id and products.product_id=received_stock.product_id AND purchase_order.product_id=received_stock.product_id and purchase_order.order_code=received_stock.order_code and purchase_order.order_code='$order_code' and purchase_order.purchase_order_id='$purchase_order_id'";
+$resultsxx= mysql_query($sqlxx) or die ("Error $sqlxx.".mysql_error());
+$rowsxx=mysql_fetch_object($resultsxx);
+
+$v_price=$rowsxx->vendor_prc;
+
+$curr_rate=$rowsxx->curr_rate;
+
+
+	//$curr_bp=$rows->curr_bp;?>
+	<?php  number_format($amntx=$avail_prod*$v_price*$curr_rate,2);?>
+  
+
+  <?php 
+  $grnt_amnt_invent=$grnt_amnt_invent+$amntx;
+  $ttl_stock=$ttl_stock+$avail_prod;
+  }
+  ?>
+ <?php echo number_format($grnt_amnt_invent,2); ?>
+	
+  
+  
+  <?php 
+  
+  
+  }
+  
+  
+  ?>
+	
+  
+  
+	
+  
+  
+
+	
+	
+	</td>
+    <td width="2%" colspan="2"></td>
+    
+</tr>
